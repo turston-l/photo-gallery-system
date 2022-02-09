@@ -12,7 +12,9 @@ function pdo_connect_mysql() {
     	// If there is an error with the connection, stop the script and output the error.
     	exit('Failed to connect to database!');
     }
-    // Template header; feel free to customize it, but do not indent the PHP code or it will throw an error
+}
+
+// Template header; feel free to customize it, but do not indent the PHP code or it will throw an error
 function template_header($title) {
     echo <<<EOT
     <!DOCTYPE html>
@@ -32,14 +34,12 @@ function template_header($title) {
         </nav>
     EOT;
     }
-    
 
-// Template footer
+    // Template footer
 function template_footer() {
     echo <<<EOT
         </body>
     </html>
     EOT;
     }
-?>
-
+    ?>
